@@ -1,0 +1,22 @@
+"""
+File: unary_operators.py
+Author: Dr. K.S.R.S. Jyothsna
+Description:
+This program demonstrates the usage of unary operators in Python
+with simple examples for beginners.
+"""
+
+# Unary Plus
+a = 10
+print("Unary plus:", +a)
+
+# Unary Minus
+print("Unary minus:", -a)
+
+# Logical NOT
+b = True
+print("Logical NOT:", not b)
+
+# Bitwise NOT
+c = 5
+print("Bitwise NOT:", ~c)
