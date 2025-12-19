@@ -7,7 +7,7 @@ Intelligence applications.
 The codes are written in a clear and well-documented manner, focusing on
 conceptual understanding rather than complexity.
 
-## 🎯 Objective
+## Objective
 
 The objective of this repository is to strengthen Python basics required
 for advanced learning in:
@@ -19,7 +19,7 @@ This repository also serves as a foundation for more advanced projects
 that will be added in future.
 
 
-## 👩‍🎓 Author
+## Author
 
 **Dr. K. S. R. S. Jyothsna**  
 PhD | Electronics & Communication Engineering  
