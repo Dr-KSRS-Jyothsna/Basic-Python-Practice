@@ -1,0 +1,169 @@
+"""
+File: python_oops_basics.py
+Author: Dr. K. S. R. S. Jyothsna
+Description:
+This program demonstrates core Object-Oriented Programming (OOPS)
+concepts in Python using simple and clear examples.
+"""
+
+print("=" * 70)
+print("PYTHON OOPS BASICS")
+print("=" * 70)
+
+# --------------------------------------------------
+# 1. CLASS AND OBJECT
+# --------------------------------------------------
+print("\n1. CLASS AND OBJECT")
+
+class Student:
+    pass
+
+s1 = Student()
+s2 = Student()
+
+print("Student object s1:", s1)
+print("Student object s2:", s2)
+
+# --------------------------------------------------
+# 2. CONSTRUCTOR (__init__)
+# --------------------------------------------------
+print("\n2. CONSTRUCTOR")
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Jyothsna", 30)
+s2 = Student("Anil", 25)
+
+print("Student 1 Name:", s1.name)
+print("Student 1 Age:", s1.age)
+print("Student 2 Name:", s2.name)
+print("Student 2 Age:", s2.age)
+
+# --------------------------------------------------
+# 3. INSTANCE METHOD
+# --------------------------------------------------
+print("\n3. INSTANCE METHOD")
+
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+
+s = Student("Jyothsna", 85)
+s.display()
+
+# --------------------------------------------------
+# 4. CLASS VARIABLE vs INSTANCE VARIABLE
+# --------------------------------------------------
+print("\n4. CLASS VARIABLE vs INSTANCE VARIABLE")
+
+class College:
+    college_name = "ABC Engineering College"   # class variable
+
+    def __init__(self, student_name):
+        self.student_name = student_name       # instance variable
+
+c1 = College("Jyothsna")
+c2 = College("Anil")
+
+print(c1.student_name, "-", c1.college_name)
+print(c2.student_name, "-", c2.college_name)
+
+# --------------------------------------------------
+# 5. INHERITANCE
+# --------------------------------------------------
+print("\n5. INHERITANCE")
+
+class Person:
+    def greet(self):
+        print("Hello, I am a person")
+
+class Teacher(Person):
+    def teach(self):
+        print("I am teaching")
+
+t = Teacher()
+t.greet()
+t.teach()
+
+# --------------------------------------------------
+# 6. METHOD OVERRIDING
+# --------------------------------------------------
+print("\n6. METHOD OVERRIDING")
+
+class Parent:
+    def show(self):
+        print("This is Parent class")
+
+class Child(Parent):
+    def show(self):
+        print("This is Child class")
+
+c = Child()
+c.show()
+
+# --------------------------------------------------
+# 7. ENCAPSULATION
+# --------------------------------------------------
+print("\n7. ENCAPSULATION")
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance   # private variable
+
+    def get_balance(self):
+        return self.__balance
+
+account = BankAccount(5000)
+print("Balance:", account.get_balance())
+
+# --------------------------------------------------
+# 8. POLYMORPHISM
+# --------------------------------------------------
+print("\n8. POLYMORPHISM")
+
+class Dog:
+    def sound(self):
+        print("Dog barks")
+
+class Cat:
+    def sound(self):
+        print("Cat meows")
+
+animals = [Dog(), Cat()]
+
+for a in animals:
+    a.sound()
+
+# --------------------------------------------------
+# 9. OBJECT MEMORY & id()
+# --------------------------------------------------
+print("\n9. OBJECT MEMORY")
+
+x = 10
+y = 10
+print("id(x):", id(x))
+print("id(y):", id(y))
+
+lst1 = [1, 2, 3]
+lst2 = lst1
+print("id(lst1):", id(lst1))
+print("id(lst2):", id(lst2))
+
+# --------------------------------------------------
+# SUMMARY
+# --------------------------------------------------
+print("\nSUMMARY:")
+print("Class is a blueprint")
+print("Object is an instance of a class")
+print("Constructor initializes objects")
+print("Inheritance, Polymorphism, Encapsulation are core OOPS concepts")
+
+print("\nPython OOPS program executed successfully.")
